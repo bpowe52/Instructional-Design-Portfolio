@@ -1,257 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Bernadette Powe | Instructional Design Portfolio</title>
-  <style>
-    :root {
-      --navy: #17324d;
-      --blue: #2f6f9f;
-      --light-blue: #eaf3f8;
-      --gold: #c59a3d;
-      --text: #24313d;
-      --muted: #5e6b75;
-      --white: #ffffff;
-      --border: #d9e2e8;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: #f6f8fa;
-      line-height: 1.6;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: var(--white);
-      padding: 72px 24px 64px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      line-height: 1.15;
-    }
-
-    .hero .subtitle {
-      margin: 16px auto 0;
-      max-width: 850px;
-      font-size: 1.15rem;
-      opacity: 0.96;
-    }
-
-    .hero .tagline {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 8px 16px;
-      border: 1px solid rgba(255,255,255,0.55);
-      border-radius: 999px;
-      font-size: 0.95rem;
-    }
-
-    main {
-      width: min(1100px, 92%);
-      margin: -30px auto 60px;
-    }
-
-    .intro,
-    .project-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: 0 10px 28px rgba(23, 50, 77, 0.08);
-    }
-
-    .intro {
-      padding: 30px;
-      margin-bottom: 28px;
-    }
-
-    .intro h2,
-    .projects h2 {
-      color: var(--navy);
-      margin-top: 0;
-    }
-
-    .projects h2 {
-      margin: 10px 0 18px;
-      font-size: 1.8rem;
-    }
-
-    .project-card {
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      margin-bottom: 28px;
-    }
-
-    .project-content {
-      padding: 34px;
-    }
-
-    .project-side {
-      background: var(--light-blue);
-      padding: 34px;
-      border-left: 1px solid var(--border);
-    }
-
-    .project-label {
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      font-weight: bold;
-      color: var(--blue);
-      font-size: 0.8rem;
-    }
-
-    .project-card h3 {
-      color: var(--navy);
-      margin: 8px 0 12px;
-      font-size: 1.7rem;
-    }
-
-    .role-list {
-      margin: 12px 0 0;
-      padding-left: 20px;
-    }
-
-    .role-list li {
-      margin-bottom: 7px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      background: var(--gold);
-      color: #17202a;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 13px 22px;
-      border-radius: 8px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .button:hover,
-    .button:focus {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.16);
-      outline: 3px solid rgba(197,154,61,0.3);
-      outline-offset: 2px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-    }
-
-    .skill {
-      background: var(--white);
-      border: 1px solid #bdd0dc;
-      color: var(--navy);
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      padding: 0 24px 34px;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 760px) {
-      .project-card {
-        grid-template-columns: 1fr;
-      }
-
-      .project-side {
-        border-left: 0;
-        border-top: 1px solid var(--border);
-      }
-
-      .hero {
-        padding-top: 54px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dr. Bernadette Powe | Instructional Design Portfolio</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fa;color:#24313d}
+header{background:linear-gradient(135deg,#15324d,#2d6d99);color:#fff;padding:60px 20px;text-align:center}
+header h1{margin:0;font-size:3em}
+header p{font-size:1.2em}
+.container{max-width:1100px;margin:auto;padding:30px}
+.card{background:#fff;border-radius:12px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,.08);margin-bottom:25px}
+.btn{display:inline-block;background:#c89a3d;color:#111;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:bold;margin:8px}
+.skills span{display:inline-block;background:#e8f2f8;border-radius:20px;padding:7px 12px;margin:5px}
+footer{text-align:center;padding:25px;color:#666}
+</style>
 </head>
 <body>
-  <header class="hero">
-    <h1>Dr. Bernadette Powe</h1>
-    <p class="subtitle">
-      Instructional Designer | Curriculum Developer | Healthcare and Regulatory Education
-    </p>
-    <div class="tagline">Interactive Learning Portfolio</div>
-  </header>
+<header>
+<h1>Dr. Bernadette Powe</h1>
+<p>Instructional Designer • Curriculum Developer • Healthcare Education Specialist</p>
+<a class="btn" href="story.html">Launch Interactive Course</a>
+<a class="btn" href="Bernadette_Powe_Resume.pdf">Download Résumé</a>
+<a class="btn" href="https://www.linkedin.com/in/bernadette-powe/" target="_blank">LinkedIn</a>
+<a class="btn" href="mailto:bpowe@hotmail.com">Email Me</a>
+</header>
 
-  <main>
-    <section class="intro" aria-labelledby="about-heading">
-      <h2 id="about-heading">About This Portfolio</h2>
-      <p>
-        I design and develop engaging learning experiences for professional, healthcare,
-        leadership, and regulatory audiences. My work includes transforming subject matter
-        expert content into polished, learner-focused courses using Articulate Storyline 360,
-        visual design, multimedia, narration, interactions, and quality assurance.
-      </p>
-    </section>
+<div class="container">
+<div class="card">
+<h2>About Me</h2>
+<p>I specialize in transforming subject matter expert content into engaging, interactive learning experiences using Articulate Storyline 360. My experience includes healthcare, leadership, regulatory education, continuing education, curriculum development, accessibility, and quality assurance.</p>
+</div>
 
-    <section class="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Featured Project</h2>
+<div class="card">
+<h2>Featured Project</h2>
+<h3>Nursing Leadership Strategies</h3>
+<p><strong>My Role:</strong> Instructional Designer, Storyline 360 Developer, Graphic Designer, Content Editor, and Quality Assurance Reviewer.</p>
+<a class="btn" href="story.html">Launch Course</a>
+</div>
 
-      <article class="project-card">
-        <div class="project-content">
-          <div class="project-label">Articulate Storyline 360 Module</div>
-          <h3>Nursing Leadership Strategies for Success</h3>
-          <p>
-            This course began as content supplied by a subject matter expert in a Microsoft Word
-            document. I edited and organized the material, designed the visual presentation, and
-            developed the complete interactive course in Articulate Storyline 360.
-          </p>
+<div class="card">
+<h2>Skills</h2>
+<div class="skills">
+<span>Storyline 360</span><span>Rise 360</span><span>PowerPoint</span><span>Word</span>
+<span>Adobe Creative Cloud</span><span>Accessibility</span><span>Quality Assurance</span>
+<span>Curriculum Development</span><span>Instructional Design</span>
+</div>
+</div>
 
-          <a class="button" href="story.html" target="_blank" rel="noopener">
-            Launch Interactive Course
-          </a>
-        </div>
+<div class="card">
+<h2>Additional Projects</h2>
+<p>Additional interactive Storyline courses and instructional design samples will be added here.</p>
+</div>
+</div>
 
-        <aside class="project-side" aria-label="Project responsibilities">
-          <h3>My Role</h3>
-          <ul class="role-list">
-            <li>Instructional designer and course developer</li>
-            <li>Content editor and organizer</li>
-            <li>Graphic and visual designer</li>
-            <li>Storyline interaction developer</li>
-            <li>Narration, animation, and trigger review</li>
-            <li>Accessibility and quality assurance review</li>
-          </ul>
-
-          <h3 style="margin-top:24px;">Skills Demonstrated</h3>
-          <div class="skills">
-            <span class="skill">Storyline 360</span>
-            <span class="skill">Visual Design</span>
-            <span class="skill">Triggers</span>
-            <span class="skill">Layers</span>
-            <span class="skill">Animation</span>
-            <span class="skill">Narration</span>
-            <span class="skill">Accessibility</span>
-            <span class="skill">Quality Assurance</span>
-          </div>
-        </aside>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 Dr. Bernadette Powe. Portfolio sample for professional review.
-  </footer>
+<footer>© 2026 Dr. Bernadette Powe</footer>
 </body>
 </html>
